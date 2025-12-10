@@ -1217,9 +1217,9 @@ Payload:
 {
     "method": 1035,
     "params": {
-        "ringing_optimize": 1,
-        "pid_check": 1,
-        "auto_bed_leveling": 1
+        "ringing_optimize": true,
+        "pid_check": true,
+        "auto_bed_leveling": true
     },
     "id": 9
 }
@@ -1229,7 +1229,13 @@ Payload:
 
 Payload:
 ```json
-TODO
+{
+    "id": 9,
+    "method": 1035,
+    "result": {
+        "error_code": 1003
+    }
+}
 ```
 
 ## CMD GetHistoryTask
